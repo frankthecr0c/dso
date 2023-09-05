@@ -2,15 +2,17 @@ SET(PROJECT_NAME DSO)
 
 PROJECT(${PROJECT_NAME})
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
-#set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_VERBOSE_MAKEFILE ON)
 
-
+set (CMAKE_CXX_STANDARD 14)
 set(BUILD_TYPE Release)
 #set(BUILD_TYPE RelWithDebInfo)
 
 set(EXECUTABLE_OUTPUT_PATH bin)
 set(LIBRARY_OUTPUT_PATH lib)
 set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+set(EIGEN_DIR "/usr/include/eigen3")
+set(PANGOLIN_DIR "/root/Pangolin/build</pre>")
 
 # required libraries
 find_package(SuiteParse REQUIRED)
@@ -61,7 +63,9 @@ include_directories(
   ${PROJECT_SOURCE_DIR}/src
   ${PROJECT_SOURCE_DIR}/thirdparty/Sophus
   ${PROJECT_SOURCE_DIR}/thirdparty/sse2neon
+  ${EIGEN_DIR}
   ${EIGEN3_INCLUDE_DIR}
+  ${PANGOLIN_DIR}
 ) 
 
 

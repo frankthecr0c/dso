@@ -1,5 +1,7 @@
-
-
+========= 05.09.2023 ==========
+* sse2Neon submodule included in this repo:
+Original url = https://github.com/jratcliff63367/sse2neon.git
+* CMakelists modified to work with c++14, ubuntu18.04 and opencv 3
 
 ========= 16.11.2016 ==========
 * Added Sample output wrapper IOWrapper/OutputWrapper/SampleOutputWrapper.h.
